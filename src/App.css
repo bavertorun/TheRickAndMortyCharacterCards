@@ -1,0 +1,104 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.userCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+.userCard{
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    background-color: #242424;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+.userCard img{
+    height: 250px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+.buttons .prev,
+.buttons .next{
+    margin-right: 15px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: larger;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #242424;
+    border: none;
+    border-radius: 5px;
+}
+.buttons .prev:hover,
+.buttons .next:hover{
+    background-color: #6b6b6b;
+}
+.buttons .prev[disabled],
+.buttons .next[disabled]
+{
+    cursor: not-allowed;
+    background-color: #242424;
+}
+.title{
+    font-size: 60px;
+}
+.currentPageInput{
+    background-color: #0000;
+    border: none;
+    padding: 5px;
+    width: 15px;
+    outline: none;
+    text-align: end;
+}
+
+.search{
+    padding: 10px;
+    width: 400px;
+    background-color: #242424;
+    border:0;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 768px) {
+    .userCard {
+        width: calc(50% - 20px);
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 468px) {
+    .userCard {
+        width: calc(100% - 20px);
+    }
+    .title{
+        font-size: 35px;
+    }
+}
