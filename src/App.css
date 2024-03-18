@@ -96,7 +96,7 @@ input[type=number] {
 }
 
 @media (max-width: 468px) {
-    .userCard {
+    .userCard, .search {
         width: calc(100% - 20px);
     }
     .title{
